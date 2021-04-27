@@ -6,6 +6,7 @@ indexOfField["nameField"] = 0;
 indexOfField["addressField"] = 1;
 indexOfField["ratingField"] = 2;
 indexOfField["file"] = 3;
+
 function resetClear() {
     document.getElementById("touristAddForm").reset(); 
     resetAlert();
