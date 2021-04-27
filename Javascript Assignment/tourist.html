@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>
+    </title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "touristForm">
+        <div class = "add-new">
+            <h2>Add a new Tourist Place</h2>
+        </div>
+        <div class = "main">
+            <form id = "touristAddForm">
+                <h3 class = "label">Name:</h3>
+                <input class = "text-field" id = "nameField" type = "text" name = "Name">
+                <label class = "required-field hide" id = "nameValidationError">This field is required.</label>
+                <label class = "required-field hide" id = "duplicateNameError">This name is already taken.</label>
+                <h3 class = "label">Address:</h3>
+                <input class = "text-field" id = "addressField" type = "text" name = "Address">
+                <label class = "required-field hide" id = "addressValidationError">This field is required.</label>
+                <h3 class = "label"> Rating: </h3>
+                <input class = "text-field" id = "ratingField" type = "number" name = "Rating" min = "1" max = "5">
+                <label class = "required-field hide" id = "ratingValidationError">This field is required.</label>
+                <h3 class = "label"> Type: </h3>
+                <select class = "text-field" id = "optionField" name = "Type">
+                    <option disabled = "disabled" selected = "selected"></option>
+                    <option >Beach</option>
+                    <option >Hills</option>
+                    <option >Fountain</option>
+                    <option >Landmark</option>
+                </select>
+                <label class = "required-field hide" id = "optionValidationError">This field is required.</label>
+                <h3 class = "label">Picture:</h3>
+                <input class = "text-field" id = "file" type = "file" name = "File">
+                <label class = "required-field hide" id = "fileValidationError">This field is required.</label>
+                <div id = "previewField">
+                    <div id = "findPreviewField">
+                        <img id = "img">
+                    </div>
+                </div>
+                <input onclick = "showTouristPlace()" class = "submit-btn" type = "button" value = "Submit"/>
+                <input onclick = "resetClear()" class = "reset-btn" type = "button" value = "Reset"/>
+            </form>
+            <input onclick = "backToTouristPlace()" class = "links" type = "button" value = "Back to Tourist Place List"/>
+        </div>
+    </div>
+    <div id = "touristPlace">
+        <form>
+            <input id = "searchBar" type = "search" placeholder = "Enter name to search" onkeyup = "search()">
+        </form>
+        <table id = "table">
+            <thead class = "title">
+                <tr>
+                    <th class = "button">Name 
+                        <div class = "arrow-btn">
+                            <button class = "design-btn" onclick = "sortTable(true)">
+                                ^
+                            </button>
+                            <button class = "design-btn" onclick = "sortTable(false)">
+                                v
+                            </button>
+                        </div>
+                    </th>
+                    <th>Address</th>
+                    <th>Rating</th>
+                    <th>Picture</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <input onclick = "showAddForm()" class = "create-new-tourist-place-link" type = "button" value = "Create New Tourist Place"/>
+    </div>
+    <script src = "app.js"> </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color : white;
+    background-image: center;
+    background-size: cover;
+    margin-top: 100px;
+}
+.add-new{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.main{
+    width: 800px;
+    margin: auto;
+}
+form {
+    padding: 10px;
+}
+.label {
+    margin-left: 25px;
+    margin-top: 30px;
+    width : 125px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.name-box {
+    position: relative;
+    background-color : whitesmoke;
+    left: 200px;
+    top: -30px;
+    line-height: 30px;
+    width:500px;
+    border-radius: 10px;
+    padding: 0px 22px;
+    font-size: 16px;
+}
+.address-box{
+    position: relative;
+    background-color : whitesmoke;
+    left: 200px;
+    top: -30px;
+    line-height: 30px;
+    width:500px;
+    border-radius: 10px;
+    padding: 0px 22px;
+    font-size: 16px;
+}
+.rating-box {
+    position: relative;
+    background-color : whitesmoke;
+    left: 200px;
+    top: -30px;
+    line-height: 30px;
+    width:500px;
+    border-radius: 10px;
+    padding: 0px 22px;
+    font-size: 16px;
+}
+.option-box {
+    position: relative;
+    background-color : whitesmoke;
+    left: 200px;
+    top: -30px;
+    line-height: 30px;
+    width:550px;
+    height:30px;
+    border-radius: 10px;
+    padding: 0px 22px;
+    font-size: 16px;
+    outline: none;
+    overflow: hidden;
+}
+
+.file {
+    position: relative;
+    background-color : whitesmoke;
+    left: 200px;
+    top: -30px;
+    padding: 0px 22px;
+    font-size: 13px;
+    line-height: 30px;
+    width:520px;
+    height:30px;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    position: absolute;
+    left: 930px;
+    bottom: 120px;
+    background-color: yellowgreen;
+    text-align: center;
+    border-radius: 12px;
+    border : 2px solid #366473;
+    padding : 14px 30px;
+    outline: none;
+    color: white;
+}
+.reset-btn {
+    position: absolute;
+    left: 1050px;
+    bottom: 120px;
+    background-color:orange;
+    text-align: center;
+    border-radius: 12px;
+    border : 2px solid #366473;
+    padding : 14px 30px;
+    outline: none;
+    color: white;
+}
+.links {
+    position: absolute;
+    left: 980px;
+    bottom: 80px;
+}
+
+.searchbar {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color : whitesmoke;
+    line-height: 30px;
+    width:500px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.update-btn {
+    background-color:#33B3FF;
+    text-align: center;
+    border-radius: 12px;
+    border : 2px solid #366473;
+    padding : 14px 30px;
+    outline: none;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #FF3355;
+    text-align: center;
+    border-radius: 12px;
+    border : 2px solid #366473;
+    padding : 14px 30px;
+    outline: none;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 3px 20px 3px 40px;
+}
+
+.container > div {
+    border: 2px solid white;
+    padding: 5px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+.grid-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bgrey {
+    background-color: #E8EAEC;
+}
+
+.create-new-tourist-place-link {
+    background-color: #33B3FF;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 20px 20px 40px;
+    border-radius: 10px;
+}
+
+
+

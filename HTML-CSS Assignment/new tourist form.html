@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "add-new">
+        <h2>Add a new Tourist Place</h2>
+    </div>
+    <div class="main">
+        <form >
+            <h3 class = "label">Name:</h3>
+            <input class = "name-box" type="text" name="Name">
+            <h3 class = "label">Address:</h3>
+            <input class = "address-box" type="text" name="Address">
+            <h3 class = "label"> Rating: </h3>
+            <input class = "rating-box" type="number" name="Rating" min="1" max="5">
+            <h3 class = "label"> Type: </h3>
+            <select class="option-box" name="Type">
+                <option disabled = "disabled" selected = "selected"></option>
+                <option >Beach</option>
+                <option >Hills</option>
+                <option >Fountain</option>
+                <option >Landmark</option>
+            </select>
+            <h3 class="label">Picture:</h3>
+            <input class = "file" type="file" name = "File">
+            <input class="submit-btn" type="submit" value="Submit" />
+            <input class="reset-btn" type="reset" value="Reset" />
+        </form>
+        <a class = "links" href="tourist place.html">Back to Tourist Place List</a>
+    </div>
+</body>
+</html>
