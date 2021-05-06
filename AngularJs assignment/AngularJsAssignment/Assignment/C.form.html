@@ -1,0 +1,14 @@
+<div ng-repeat="c in checkbox">
+    <input type="checkbox"  ng-model="checkbox[$index].selected">
+    <label>{{checkbox[$index].name}}</label>
+</div>
+
+<b ng-style = "{'color':'{{checkbox[$index].color}}'}" ng-repeat="c in checkbox">
+    {{c.comma}}
+    {{selectedColorName[c.id]}}
+</b>
+
+<br><br>
+<button ng-click="checkAll()">Check All</button> 
+<button ng-click="uncheckAll()">Uncheck All</button>
+<button ng-click="showSelected()">Show All Selected</button>

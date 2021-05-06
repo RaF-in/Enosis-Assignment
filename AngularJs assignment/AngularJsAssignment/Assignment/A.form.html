@@ -1,0 +1,26 @@
+<form name = "form">
+    <p>
+        <b>Input Number 1: </b>
+        <input type="number" ng-model = "firstNumber" required>
+    </p>
+    <p>
+        <b>Input Number 2: </b>
+        <input type="number" ng-model = "secondNumber" required>
+    </p>
+    <p>
+        <b>Input Number 3: </b>
+        <input type="number" ng-model = "thirdNumber" required>
+    </p>
+
+    <p>Please select your Choice:</p>
+    
+    <input type="radio" name="radio" id="radio" ng-model = "choice" ng-value = "'true'"> 
+    <label >Increasing</label>
+
+    <input type="radio" name="radio" id="radio" ng-model = "choice" ng-value = "'false'"> 
+    <label >Decreasing</label>
+    <br><br>
+    <button ng-disabled="form.$invalid" ng-click="verify()"> Verify </button>
+    <br><br>
+    <div>{{result}}</div>
+</form>

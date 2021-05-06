@@ -1,0 +1,7 @@
+<select ng-model='month' ng-change='fetchdays()'>
+  <option ng-repeat = "months in allMonths" value='{{months.value}}'>{{months.name}}</option>
+</select>
+<select >
+  <option value='0'>-- Select Day --</option>
+  <option ng-repeat="mon in allMonths[val].day" >{{ mon }}</option>
+</select>

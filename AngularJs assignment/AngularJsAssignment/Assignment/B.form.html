@@ -1,0 +1,13 @@
+<form name = "form">
+    <b>Enter password:</b>
+    <br>
+    <input type="password" ng-model = "password" required>
+    <br><br>
+    <b>Enter password again:</b>
+    <br>
+    <input type="password" ng-model = "rePassword" required>
+    <br><br>
+    <button ng-disabled="form.$invalid" ng-click="match()"> Match </button>
+    <br><br>
+    {{message}}
+</form>
